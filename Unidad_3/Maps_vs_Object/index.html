@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        // ? Map
+        const objetoMap = new Map();
+        objetoMap.set('un string', 'valor asociado');
+        // Objeto
+        const myObjeto = {}
+
+        objetoMap.set(myObjeto , "valor asociado al objeto")
+        objetoMap.set(10 , "valor asociado al objeto")
+
+        for([key, value] of objetoMap){
+            console.log(value);
+        }
+
+        const obj = {}
+        obj['valorkey'] = 12;
+        obj['valorkey2'] = 22;
+        obj['valorkey3'] = 42;
+
+        // for([key, value] of obj){
+        //     console.log(value);
+        // }
+
+        const keys = Object.keys(obj)
+
+        keys.forEach( key => {
+            console.log(obj[key]);
+        })
+
+    </script>
+</body>
+</html>
